@@ -78,19 +78,21 @@ class flat:
                 break
         mess={"success":"created data at "+bits[0]}
         return(mess)
+    
     def read(self,cmd):
         bits=cmd.split("<")
         out=bits[0]
         full_data=[]
         loc=path.join(self.db,out,)
+        #print(loc)
         pos=len([str(name) for name in os.listdir(loc)])
         list_of_keys=[]
         auto=False
         if bits[1]=="*":
             for x in range(pos):
                 x+=1
-                ji=self.db+"\\"+out+"\\"+str(x)+".f"
-                jir=self.db+"\\"+out+"\\"+"schema.f"
+                ji=path.join(self.db,out,str(x)+".f")
+                jir=path.join(self.db,out,"schema.f")
                 try:
                     with open(ji, 'r') as output:
                         xc=output.read()
@@ -127,6 +129,7 @@ class flat:
         else:
             gy=bits[1].split(",")
         return(full_data)
+    
     def update(self,cmd):
         bits=cmd.split(">")
         out=bits[0]
@@ -141,6 +144,7 @@ class flat:
         with open(loc, 'w+') as output:
             output.write(bits[1])
         mess="created data at "+bits[0]
+    
     def scheme(self,cmd):
         bits=cmd.split(":")
         out=bits[0]
@@ -150,6 +154,7 @@ class flat:
         f.close()
         tt="created scheme at "+bits[0]
         return({"success":tt})
+    
     def delete(self,cmd):
         pass
     
