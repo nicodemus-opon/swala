@@ -1,0 +1,6 @@
+documents::c/dir/filename.doc::id
+
+when file is added:
+add contains_file
+
+add .f files containing file name

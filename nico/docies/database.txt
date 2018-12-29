@@ -1,0 +1,21 @@
+tables:folder
+columns:files
+
+import flatfile
+
+cv=flatbase.connect("location","password")
+d=cv.exec("read users")
+print(d)
+
+
+
+"users<file:nico.txt"
+
+create:
+"users>,,,,"
+read:
+"users<0,1,2<(0=='nico')"
+update:
+"users>nico,opon,james,otieno>(0=='nico')"
+delete:
+"users!(0=='nico')"

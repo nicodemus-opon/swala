@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Nico's Blog</title>
+  <link href="assets/img/brand/favicon.png" rel="icon" type="image/png">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+  <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link type="text/css" href="assets/css/argon.css" rel="stylesheet">
+</head>
+<body>
+<?php
+include('include/navbar.php');
+?>
+<div class="container" style="padding-top:40px">
+<div class="containerx">
+  <div class="row">
+    <div class="col-2">
+      
+    </div>
+    <div class="col-8">
+    <div class="">
+    <form>
+    <div class="form-group">
+    <label for="exampleInputEmail1">Password</label>
+        <input type="password" placeholder="password" class="form-control form-control-alternative"/>
+      </div>
+      <div class="form-group">
+      <label for="exampleInputEmail1">Password confirm</label>
+        <input type="password" placeholder="password confirm" class="form-control form-control-alternative"/>
+      </div>
+      <div class="form-group">
+      <label for="exampleInputEmail1">Personal details</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write a large text here ..."></textarea>
+  </div>
+  <br>
+  <input class="btn btn-primary btn-block" type="submit" value="Update Details">
+</form>
+</div>
+    </div>
+    <div class="col-2">
+      
+    </div>
+  </div>
+</div>
+
+</div>
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/popper/popper.min.js"></script>
+  <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="assets/vendor/PLUGIN_FOLDER/PLUGIN_SCRIPT.js"></script>
+  <script src="assets/js/argon.js"></script>
+  </body>
+</html>

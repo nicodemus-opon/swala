@@ -1,0 +1,4 @@
+define schema:
+users??name,password>age.password
+auto_scheme
+on create table add scheme file
