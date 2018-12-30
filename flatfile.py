@@ -54,8 +54,8 @@ class flat:
     def create(self, cmd):
         bits = cmd.split(">")
         out = bits[0]
-        loc = self.db + "\\" + out + "\\"
-        oo = self.db + "\\" + out + "\\"
+        loc = path.join(self.db,out,)
+        oo = path.join(self.db,out,)
         if not os.path.exists(loc):
             os.makedirs(loc)
             kk = loc + "schema.f"
@@ -68,7 +68,7 @@ class flat:
         while yu < len(bits):
             try:
                 pos = len([str(name) for name in os.listdir(oo)])
-                loc = self.db + "\\" + out + "\\" + str(pos) + ".f"
+                loc = path.join(self.db,out,str(pos) + ".f")
                 f = open(loc, "w+")
                 f.write("")
                 f.close()
@@ -150,7 +150,7 @@ class flat:
     def scheme(self, cmd):
         bits = cmd.split(":")
         out = bits[0]
-        loc = self.db + "\\" + out + "\\" + "schema.f"
+        loc = path.join(self.db, out, "schema.f")
         f = open(loc, "w+")
         f.write(bits[1])
         f.close()
@@ -192,7 +192,7 @@ class flat:
         dh = d.split(".")
         dc = dh[0]
         # print(d)
-        xc = str(os.getcwd()) + "\\" + dc
+        xc = path.join(str(os.getcwd()), dc)
         with zipfile.ZipFile(d, 'r') as zip_ref:
             zip_ref.extractall(xc)
         # print(xc)
