@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0944af8c-f7ca-470a-838b-cc347ba55be7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/swala_errors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/condition.py" beforeDir="false" afterPath="$PROJECT_DIR$/condition.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flatfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/flatfile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interactive.py" beforeDir="false" afterPath="$PROJECT_DIR$/interactive.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,15 +11,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/swala$interactive.coverage" NAME="interactive Coverage Results" MODIFIED="1546353933142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/swala$condition.coverage" NAME="condition Coverage Results" MODIFIED="1546370396986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/swala$interactive.coverage" NAME="interactive Coverage Results" MODIFIED="1546428824381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/swala$condition.coverage" NAME="condition Coverage Results" MODIFIED="1546408864143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="swala" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/interactive.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
@@ -89,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/condition.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="31" column="43" lean-forward="true" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+            <state relative-caret-position="315">
+              <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -163,7 +159,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.condition">
+  <component name="RunManager" selected="Python.interactive">
     <configuration name="condition" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="swala" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -225,8 +221,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.condition" />
         <item itemvalue="Python.interactive" />
+        <item itemvalue="Python.condition" />
       </list>
     </recent_temporary>
   </component>
@@ -242,7 +238,7 @@
       <updated>1546102285867</updated>
       <workItem from="1546102288938" duration="787000" />
       <workItem from="1546156813081" duration="4359000" />
-      <workItem from="1546332134455" duration="11224000" />
+      <workItem from="1546332134455" duration="15177000" />
     </task>
     <task id="LOCAL-00001" summary="idea">
       <created>1546102577272</created>
@@ -262,7 +258,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16370000" />
+    <option name="totallyTimeSpent" value="20323000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -320,13 +316,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interactive.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flatfile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
@@ -375,8 +364,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/condition.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="31" column="43" lean-forward="true" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+        <state relative-caret-position="315">
+          <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interactive.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
         </state>
       </provider>
     </entry>
