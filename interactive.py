@@ -23,7 +23,7 @@ if __name__ == "__main__":
 
     print("SWALA CLI")
     xc = ""
-    n = 0
+    n = 1
     zs = flatfile.flat("nico")
     zs.connect()
     while xc != "quit":
@@ -34,6 +34,9 @@ if __name__ == "__main__":
             create_db(x[1])
             break
         n += 1
+        if xc == "":
+            # print("")
+            continue
         ii = zs.exec(xc)
         # print(ii)
         p = str(ii)

@@ -1,7 +1,7 @@
 import zipfile
 import os
 import json
-from shutil import copyfile
+from shutil import copyfile, rmtree
 import os.path as path
 
 
@@ -54,11 +54,11 @@ class flat:
     def create(self, cmd):
         bits = cmd.split(">")
         out = bits[0]
-        loc = path.join(self.db,out,)
-        oo = path.join(self.db,out,)
+        loc = path.join(self.db, out, )
+        oo = path.join(self.db, out, )
         if not os.path.exists(loc):
             os.makedirs(loc)
-            kk = loc + "schema.f"
+            kk = path.join(loc, "schema.f")
             f = open(kk, "w+")
             f.write("auto")
             f.close()
@@ -68,7 +68,7 @@ class flat:
         while yu < len(bits):
             try:
                 pos = len([str(name) for name in os.listdir(oo)])
-                loc = path.join(self.db,out,str(pos) + ".f")
+                loc = path.join(self.db, out, str(pos) + ".f")
                 f = open(loc, "w+")
                 f.write("")
                 f.close()
@@ -203,10 +203,32 @@ class flat:
         if cmd == "tables":
             nico = os.listdir(self.db)
             for x in nico:
-                d = path.join(self.db, x)
-                resp[str(x)] = len(os.listdir(d)) - 1
+                try:
+                    d = path.join(self.db, x)
+                    if str(x) != "temp":
+                        resp[str(x)] = len(os.listdir(d)) - 1
+                except Exception as e:
+                    pass
             return (resp)
-        resp["error"] = "unknown command"
+        mult = cmd.split(" ")
+        if len(mult) > 1:
+            if mult[0].lower() == "del":
+                try:
+                    dd = path.join(self.db, mult[1])
+                    rmtree(dd)
+                    resp["Success"] = "removed table " + mult[1]
+                    return (resp)
+                except Exception as e:
+                    print(e)
+                    resp["error"] = "could not delete table " + mult[1]
+                    return (resp)
+        if cmd == "quit":
+            resp["bye"] = "quitting interactive"
+            return (resp)
+        if cmd == "":
+            resp["error"] = "no command given"
+        else:
+            resp["error"] = "unknown command"
         return (resp)
 
     def exec(self, command=""):
